@@ -8,55 +8,89 @@
             background-color: lightblue;
         }
         h1 {
-            color: blue;
-            font-size: xx-large;
+            color: white;
+            font-size: 40px;
+            position: fixed;
+            z-index: 3;
+            left: 50px;
+            top: -15px;
         }
         h2 {
-            color: rgb(44, 139, 168);
-            font-size: x-large;
+            color: rgb(22, 29, 131);
+            font-size: xx-large;
+            position: relative;
+            top: 65px;
         }
         .project-names {
             color: rgb(106, 131, 243);
             font-size: larger;
+            margin-left: 25px;
+            position: relative;
+            top: 50px;
         }
         p {
             font-family: "Times New Roman", Times, serif;
             font-size: large;
             margin-left: 25px;
+            position: relative;
+            top: 50px;
         }
         a {
             text-decoration:none;
+            position: relative;
+            top: 50px;
+            font-size: 20px;
+            color: blue;
         }
-        .project-info {
-            margin-left:100px;
+        .two {
+            color: blue;
         }
-        .links {
-            margin-left: 75px;
+        .top_link {
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            font-size: large;
+        }
+        .box {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-color: rgb(26, 71, 112);
+            height: 75px;
+            z-index: 2;
+        }
+        .top_thing{
+            position: absolute;
+            top: -20px;
         }
     </style>
 </head>
 <body> 
 <center>
-    <h1 id="top">Jared's Portfolio</h1>
+    <p id="top" class="top_thing"></p>
+    <h1>Jared's Portfolio</h1>
 
 
     <h2>Projects</h2>
-<a href="https://www.google.com/">
-    About me</a>
     <span class="links">
 <a href="https://www.google.com/">
-    Projects</a>
+    About me<br></a>
     </span>
     <span class="links">
 <a href="https://www.google.com/">
-    Resume and Skills</a>
+    Projects<br></a>
+    </span>
+    <span class="links">
+<a href="https://www.google.com/">
+    Resume and Skills<br></a>
     </span>
     <span class="links">
 <a href="https://www.linkedin.com/in/jared-nation-meche/">
     linkedIn
 </span>
-
 </a>
+<div class = "box"></div>
 </center>
 <div class = 'project-info'>
     <h3 class="project-names">
@@ -70,20 +104,22 @@
         snacks and deliver them to scooby's mouth. The third and final task was to deliver the 
         
     </p>
-    
     <h3 class="project-names">
         Autonomous Swarm Marine Robots
     </h3>
     <p class="project-descriptions">
         Myself and my teammates in Georgia Tech's Robotech hackathon created a prototype <br>
         of a collective of drone robots and a mothership that remove algae blooms from a large <br>
-        body of water.
+        body of water. During the weekend long hackathon, we were able to complete a 3D model<br> 
+        of one of the drone robots, and we were able to create a visual simumlation of the drones <br> 
+        removing the algael blooms of the body of water that we modeled using Python.
     </p>
 
     <h3 class="project-names">Collaborative Improvement of Bicycle Transportation</h3>
     <p class="project-descriptions">
         During the spring semester of 2021, a team of myself and three peers designed<br>
-         and modeled an improvement on the modern bicycle.
+        and modeled an improvement on the modern bicycle. We ideated and modeled the <br>
+        
     </p>
 
     <h3 class="project-names">
@@ -92,6 +128,6 @@
     <p class="project-descriptions">
         I created the website that you are currently reading and viewing using html, css, and javascript. </p>
         </div>
-    <a href="#top">Back to top</a>
+    <div class= "top_link"><a href="#top" class = 'two'>Back to top</a></div>
     </body>
 </html>
